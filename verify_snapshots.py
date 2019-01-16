@@ -1,4 +1,12 @@
 """
+-----------------------------------------------------------------------------
+ Copyright (c) Cameron Hummels <chummels@gmail.com>.  All rights reserved.
+
+ Distributed under the terms of the Modified BSD License.
+
+ The full license is in the file LICENSE, distributed with this software.
+-----------------------------------------------------------------------------
+
 Check to assure all enzo directories are consecutive and actually have their 
 HDF5 files and enzo files present as non-zero-sized files.  Can operate 
 by finding all relevant DD* and RD* directories, or altneratively provide a 
@@ -19,7 +27,6 @@ Outputs some relevant text to STDOUT and all to verify_snapshots.log.
 Usage:
 
 python verify_snapshots.py 
-
 python verify_snapshots.py dir_list.txt
 """
 import glob

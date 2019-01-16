@@ -1,8 +1,17 @@
 """
+-----------------------------------------------------------------------------
+ Copyright (c) Cameron Hummels <chummels@gmail.com>.  All rights reserved.
+
+ Distributed under the terms of the Modified BSD License.
+
+ The full license is in the file LICENSE, distributed with this software.
+-----------------------------------------------------------------------------
+
 Check to assure all Tempest tar files are present and valid gzip files; uses MPI
 (bw: `module load bwpy bwpy-mpi`)
 
-Usage: aprun -n 20 python verify_tar.py 
+Usage: aprun -n 32 python verify_tar.py
+Usage: aprun -n 32 python verify_tar.py filelist.txt
 """
 import glob
 import sys

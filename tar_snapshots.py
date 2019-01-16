@@ -1,11 +1,21 @@
 """
+-----------------------------------------------------------------------------
+ Copyright (c) Cameron Hummels <chummels@gmail.com>.  All rights reserved.
+
+ Distributed under the terms of the Modified BSD License.
+
+ The full license is in the file LICENSE, distributed with this software.
+-----------------------------------------------------------------------------
+
 Use MPI to tar all enzo snapshots into tarfiles for storage.
 (bw: `module load bwpy bwpy-mpi`); Have tested up to 20 cores with
 no problems.  BW helpdesk suggests we can go higher.
 Produces tar_snapshots.log with log info.
 
-Usage: aprun -n 20 python tar_snapshots.py
+Usage: aprun -n 32 python tar_snapshots.py
+Usage: aprun -n 32 python tar_snapshots.py file_list.txt
 """
+
 import glob
 import os
 import sys
