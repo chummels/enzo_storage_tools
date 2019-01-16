@@ -68,7 +68,7 @@ def grab_from_file(fn):
     directories into a list
     """
     with open(fn, 'r') as dirs:
-        dir_list = f.read().splitlines()
+        dir_list = dirs.read().splitlines()
         dir_list.sort()
         return dir_list
 
